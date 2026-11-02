@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: coalflow-ntpc-dashboard
+    runtime: python
+    plan: free
+    region: oregon
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn --chdir backend app:app --bind 0.0.0.0:$PORT --workers 1 --threads 4"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.8
+      - key: NODE_VERSION
+        value: 20.11.0

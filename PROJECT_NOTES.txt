@@ -1,0 +1,9 @@
+Project name: CoalFlow — Coal Handling Plant Monitoring Dashboard
+Purpose: Educational CSE prototype based on general CHP learning.
+Data: 100% simulated. No NTPC system connection or actual plant values.
+Frontend: React + Vite + Recharts.
+Backend: Python Flask.
+Database: SQLite.
+Start on Windows: double-click start_windows.bat.
+Frontend URL: http://localhost:5173
+Backend URL: http://127.0.0.1:5000
